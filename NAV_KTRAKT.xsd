@@ -1,0 +1,1759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:enm1="https://soap.api.nav.gov.hu/definitions/model/2.0/altalanos_iranyitoszam"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/KTRAKT/15.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/KTRAKT/15.0">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/altalanos_iranyitoszam"
+           schemaLocation="altalanos_iranyitoszam.xsd"/>
+   <element name="Doc_KTRAKT"
+            type="tns:Doc_KTRAKT_Type"
+            meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>Adatszolgáltatás a termékdíj raktárba történő be- és kiszállításról, továbbá a raktárkészletről</documentation>
+      </annotation>
+   </element>
+   <simpleType name="Enum_KTRAKT_A_0A0001D004A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="H"/>
+         <enumeration value=""/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0A0001E001A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="I"/>
+         <enumeration value="N"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0001DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0002DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0003DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0004DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0005DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0006DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0007DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0008DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0009DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0010DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0011DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0012DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0013DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0014DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0015DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0016DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0017DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0018DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0019DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0BXXXXC0020DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0001EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0002EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0003EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0004EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0005EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0006EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0007EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0008EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0009EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0010EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0011EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0012EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0013EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0014EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0015EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0016EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0017EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0018EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0019EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0CXXXXC0020EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0001CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0002CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0003CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0004CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0005CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0006CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0007CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0008CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0009CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0010CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0011CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0012CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0013CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0014CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0015CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0016CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0017CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0018CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0019CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KTRAKT_R_0DXXXXC0020CA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="S"/>
+         <enumeration value="E"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Doc_KTRAKT_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_KTRAKT_A"
+                  type="tns:Form_KTRAKT_A_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>KTRAKT_A részbizonylat</documentation>
+            </annotation>
+         </element>
+         <element name="Form_KTRAKT_R"
+                  type="tns:Form_KTRAKT_R_Type"
+                  minOccurs="1"
+                  maxOccurs="unbounded"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>KTRAKT_R részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <simpleType name="Enum_KTRAKT_A_egyseges_titulus_1">
+      <annotation>
+         <documentation>Enum értékek egyseges_titulus mátrix 1. oszlopból.</documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Dr."/>
+         <enumeration value="Dr.Dr."/>
+         <enumeration value="Id."/>
+         <enumeration value="Id.Dr."/>
+         <enumeration value="Ifj."/>
+         <enumeration value="Ifj.Dr."/>
+         <enumeration value="Özv."/>
+         <enumeration value="Özv.Dr."/>
+         <enumeration value="Prof."/>
+         <enumeration value="Dr.Pr."/>
+         <enumeration value="Pr.Dr."/>
+         <enumeration value="Dr.Habil."/>
+      </restriction>
+   </simpleType>
+   <complexType name="Form_KTRAKT_A_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány KTRAKT_A részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120001"
+                  type="tns:Block_KTRAKT_A_120001_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Azonosító adatok</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_KTRAKT_A_120001_Type">
+      <annotation>
+         <documentation>Azonosító adatok</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120002"
+                  type="tns:FieldGroup_KTRAKT_A_120002_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Adózó/raktárengedélyes adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120007"
+                  type="tns:FieldGroup_KTRAKT_A_120007_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Ügyintéző adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120009"
+                  type="tns:FieldGroup_KTRAKT_A_120009_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Adatszolgáltatás jellemzői</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_A_120002_Type">
+      <annotation>
+         <documentation>Adózó/raktárengedélyes adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószáma (adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adóazonosító jele (adóazonosító)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jogelőd adószáma (jogelőd_adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C005A"
+                  minOccurs="0"
+                  type="tns:Enum_KTRAKT_A_egyseges_titulus_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Titulusa (adózó_titulus)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Családi neve (adózó_családinév)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Utóneve (adózó_utónév)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C008A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózó/raktárengedélyes neve (adózó_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_A_120007_Type">
+      <annotation>
+         <documentation>Ügyintéző adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C031A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve (ügyintéző_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C032A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Telefonszáma (ügyintéző_telefonszáma)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_A_120009_Type">
+      <annotation>
+         <documentation>Adatszolgáltatás jellemzői</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D001A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adatszolgáltatási időszak ¦ Kezdete (adatszolg_időszak_kezdete)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D002A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adatszolgáltatási időszak ¦ Vége (adatszolg_időszak_vége)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adatszolgáltatással érintett raktárak száma (raktárak_száma)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="3"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D004A"
+                  minOccurs="0"
+                  type="tns:Enum_KTRAKT_A_0A0001D004A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózói javítás (helyesbítés) jelölése ¦ Adatszolgáltatás jellege (bev_jelleg)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózói javítás (helyesbítés) jelölése ¦ Hibásnak minősített adatlap vonalkódja (vonalkód)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <simpleType name="Enum_KTRAKT_R_egyseges_kozterulet_jelleg_szekhely_1">
+      <annotation>
+         <documentation>Enum értékek egyseges_kozterulet_jelleg_szekhely mátrix 1. oszlopból.</documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="út"/>
+         <enumeration value="utca"/>
+         <enumeration value="tér"/>
+         <enumeration value="köz"/>
+         <enumeration value="akna"/>
+         <enumeration value="akna-alsó"/>
+         <enumeration value="akna-felső"/>
+         <enumeration value="alagút"/>
+         <enumeration value="alsórakpart"/>
+         <enumeration value="arborétum"/>
+         <enumeration value="autóút"/>
+         <enumeration value="állat és növ.kert"/>
+         <enumeration value="állomás"/>
+         <enumeration value="árnyék"/>
+         <enumeration value="árok"/>
+         <enumeration value="átjáró"/>
+         <enumeration value="barakképület"/>
+         <enumeration value="barlang"/>
+         <enumeration value="bánya"/>
+         <enumeration value="bányatelep"/>
+         <enumeration value="bástya"/>
+         <enumeration value="bástyája"/>
+         <enumeration value="bejáró"/>
+         <enumeration value="bekötőút"/>
+         <enumeration value="csárda"/>
+         <enumeration value="csónakházak"/>
+         <enumeration value="domb"/>
+         <enumeration value="dűlő"/>
+         <enumeration value="dűlősor"/>
+         <enumeration value="dűlőterület"/>
+         <enumeration value="dűlőút"/>
+         <enumeration value="egyetemváros"/>
+         <enumeration value="egyéb"/>
+         <enumeration value="elágazás"/>
+         <enumeration value="emlékút"/>
+         <enumeration value="erdészház"/>
+         <enumeration value="erdészlak"/>
+         <enumeration value="erdő"/>
+         <enumeration value="erdősor"/>
+         <enumeration value="fasor"/>
+         <enumeration value="fasora"/>
+         <enumeration value="felső"/>
+         <enumeration value="forduló"/>
+         <enumeration value="föld"/>
+         <enumeration value="főmérnökség"/>
+         <enumeration value="főtér"/>
+         <enumeration value="főút"/>
+         <enumeration value="gát"/>
+         <enumeration value="gátőrház"/>
+         <enumeration value="gátsor"/>
+         <enumeration value="gyár"/>
+         <enumeration value="gyártelep"/>
+         <enumeration value="gyárváros"/>
+         <enumeration value="gyümölcsös"/>
+         <enumeration value="határsor"/>
+         <enumeration value="határút"/>
+         <enumeration value="ház"/>
+         <enumeration value="hegy"/>
+         <enumeration value="hegyhát"/>
+         <enumeration value="hegyhát dűlő"/>
+         <enumeration value="hegyhát köz"/>
+         <enumeration value="hídfő"/>
+         <enumeration value="hrsz."/>
+         <enumeration value="iskola"/>
+         <enumeration value="játszótér"/>
+         <enumeration value="kapu"/>
+         <enumeration value="kastély"/>
+         <enumeration value="kert"/>
+         <enumeration value="kertsor"/>
+         <enumeration value="kilátó"/>
+         <enumeration value="kioszk"/>
+         <enumeration value="kocsiszín"/>
+         <enumeration value="kolónia"/>
+         <enumeration value="korzó"/>
+         <enumeration value="kör"/>
+         <enumeration value="körönd"/>
+         <enumeration value="körtér"/>
+         <enumeration value="körút"/>
+         <enumeration value="körvasútsor"/>
+         <enumeration value="körzet"/>
+         <enumeration value="kultúrpark"/>
+         <enumeration value="kunyhó"/>
+         <enumeration value="kút"/>
+         <enumeration value="kültelek"/>
+         <enumeration value="külterület"/>
+         <enumeration value="lakóház"/>
+         <enumeration value="lakónegyed"/>
+         <enumeration value="lakópark"/>
+         <enumeration value="lakótelep"/>
+         <enumeration value="lejáró"/>
+         <enumeration value="lejtő"/>
+         <enumeration value="lépcső"/>
+         <enumeration value="liget"/>
+         <enumeration value="major"/>
+         <enumeration value="malom"/>
+         <enumeration value="menedékház"/>
+         <enumeration value="mélyút"/>
+         <enumeration value="munkásszálló"/>
+         <enumeration value="műút"/>
+         <enumeration value="oldal"/>
+         <enumeration value="orom"/>
+         <enumeration value="őrház"/>
+         <enumeration value="őrházak"/>
+         <enumeration value="őrházlak"/>
+         <enumeration value="park"/>
+         <enumeration value="parkja"/>
+         <enumeration value="parkoló"/>
+         <enumeration value="part"/>
+         <enumeration value="pavilon"/>
+         <enumeration value="pálya"/>
+         <enumeration value="pályaudvar"/>
+         <enumeration value="piac"/>
+         <enumeration value="pihenő"/>
+         <enumeration value="pince"/>
+         <enumeration value="pincesor"/>
+         <enumeration value="puszta"/>
+         <enumeration value="rakpart"/>
+         <enumeration value="repülőtér"/>
+         <enumeration value="rész"/>
+         <enumeration value="rét"/>
+         <enumeration value="sarok"/>
+         <enumeration value="sánc"/>
+         <enumeration value="sávház"/>
+         <enumeration value="sétány"/>
+         <enumeration value="sor"/>
+         <enumeration value="sora"/>
+         <enumeration value="sportpálya"/>
+         <enumeration value="sporttelep"/>
+         <enumeration value="stadion"/>
+         <enumeration value="strandfürdő"/>
+         <enumeration value="sugárút"/>
+         <enumeration value="szállás"/>
+         <enumeration value="szállások"/>
+         <enumeration value="szer"/>
+         <enumeration value="szél"/>
+         <enumeration value="sziget"/>
+         <enumeration value="szivattyútelep"/>
+         <enumeration value="szőlő"/>
+         <enumeration value="szőlőhegy"/>
+         <enumeration value="szőlők"/>
+         <enumeration value="tag"/>
+         <enumeration value="tanya"/>
+         <enumeration value="tanyák"/>
+         <enumeration value="telep"/>
+         <enumeration value="temető"/>
+         <enumeration value="tere"/>
+         <enumeration value="tető"/>
+         <enumeration value="téli kikötő"/>
+         <enumeration value="tömb"/>
+         <enumeration value="turistaház"/>
+         <enumeration value="udvar"/>
+         <enumeration value="utak"/>
+         <enumeration value="utcája"/>
+         <enumeration value="útja"/>
+         <enumeration value="útőrház"/>
+         <enumeration value="üdülő"/>
+         <enumeration value="üdülő-part"/>
+         <enumeration value="üdülő-sor"/>
+         <enumeration value="üdülő-telep"/>
+         <enumeration value="vadaskert"/>
+         <enumeration value="vadászház"/>
+         <enumeration value="vasútállomás"/>
+         <enumeration value="vasúti megálló"/>
+         <enumeration value="vasúti őrház"/>
+         <enumeration value="vasútsor"/>
+         <enumeration value="vágóhíd"/>
+         <enumeration value="vár"/>
+         <enumeration value="várköz"/>
+         <enumeration value="város"/>
+         <enumeration value="vezetőút"/>
+         <enumeration value="villasor"/>
+         <enumeration value="vízmű"/>
+         <enumeration value="völgy"/>
+         <enumeration value="zsilip"/>
+         <enumeration value="zug"/>
+         <enumeration value="autópálya"/>
+         <enumeration value="hajóállomás"/>
+         <enumeration value="várkerület"/>
+         <enumeration value="vitorláskikötő"/>
+         <enumeration value="u."/>
+         <enumeration value="u"/>
+         <enumeration value="kerület"/>
+         <enumeration value="útgyűrű"/>
+         <enumeration value="üdülősétány"/>
+         <enumeration value="aluljáró"/>
+         <enumeration value="lakókert"/>
+         <enumeration value="kertalja"/>
+         <enumeration value="csatornaőrház"/>
+         <enumeration value="erdeje"/>
+         <enumeration value="telek"/>
+         <enumeration value="útfél"/>
+         <enumeration value="széle"/>
+         <enumeration value="bokor"/>
+         <enumeration value="lak"/>
+         <enumeration value="járás"/>
+         <enumeration value="kertváros"/>
+         <enumeration value="szektor"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Form_KTRAKT_R_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány KTRAKT_R részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120001"
+                  type="tns:Block_KTRAKT_R_120001_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Termékdíj raktár adatai</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120011"
+                  type="tns:Block_KTRAKT_R_120011_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Termékdíj raktárkészlet- és változása</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_KTRAKT_R_120001_Type">
+      <annotation>
+         <documentation>Termékdíj raktár adatai</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120002"
+                  type="tns:FieldGroup_KTRAKT_R_120002_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Raktár adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120008"
+                  type="tns:FieldGroup_KTRAKT_R_120008_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Adatszolgáltatási időszak</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120010"
+                  type="tns:FieldGroup_KTRAKT_R_120010_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Nyilatkozat raktárkészletről</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KTRAKT_R_120011_Type">
+      <annotation>
+         <documentation>Termékdíj raktárkészlet- és változása</documentation>
+      </annotation>
+      <all>
+         <element name="Block_120012"
+                  type="tns:Block_KTRAKT_R_120012_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Termékdíj raktárba történt betárolások</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120036"
+                  type="tns:Block_KTRAKT_R_120036_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Termékdíj raktárból történt kitárolások</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120062"
+                  type="tns:Block_KTRAKT_R_120062_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Raktárkészlet</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KTRAKT_R_120012_Type">
+      <annotation>
+         <documentation>Termékdíj raktárba történt betárolások</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120013"
+                  type="tns:Chain_KTRAKT_R_120013_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Termékdíj raktárba történt betárolások</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KTRAKT_R_120036_Type">
+      <annotation>
+         <documentation>Termékdíj raktárból történt kitárolások</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120038"
+                  type="tns:Chain_KTRAKT_R_120038_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Termékdíj raktárból történt kitárolások</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KTRAKT_R_120062_Type">
+      <annotation>
+         <documentation>Raktárkészlet</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120063"
+                  type="tns:Chain_KTRAKT_R_120063_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Raktárkészlet</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Chain_KTRAKT_R_120013_Type">
+      <annotation>
+         <documentation>Termékdíj raktárba történt betárolások</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="19980">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120014"
+                           type="tns:FieldGroup_KTRAKT_R_120014_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Termékdíj raktárba történt betárolások</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_KTRAKT_R_120038_Type">
+      <annotation>
+         <documentation>Termékdíj raktárból történt kitárolások</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="19980">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120039"
+                           type="tns:FieldGroup_KTRAKT_R_120039_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Termékdíj raktárból történt kitárolások</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_KTRAKT_R_120063_Type">
+      <annotation>
+         <documentation>Raktárkészlet</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="19980">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120064"
+                           type="tns:FieldGroup_KTRAKT_R_120064_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Raktárkészlet</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_R_120002_Type">
+      <annotation>
+         <documentation>Raktár adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Termékdíj raktár engedélyszáma (termékdíj_raktár_engedélyszáma)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="12"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Raktár típusa (raktár_típusa)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="1"/>
+                  <pattern value="[A-ZÁÉÍÓÖŐÚÜŰ]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C003A"
+                  minOccurs="0"
+                  type="enm1:altalanos_iranyitoszam_2"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Irányítószám (raktár_irányítószám)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C004A"
+                  minOccurs="0"
+                  type="enm1:altalanos_iranyitoszam_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Város/község (raktár_helység)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Közterület neve (raktár_közterület_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C006A"
+                  minOccurs="0"
+                  type="tns:Enum_KTRAKT_R_egyseges_kozterulet_jelleg_szekhely_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Jellege (raktár_közterület_jellege)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Házszám (raktár_házszám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="15"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C008A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Épület (raktár_épület)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C009A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Lépcsőház (raktár_lépcsőház)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C010A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Emelet (raktár_emelet)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C011A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Ajtó (raktár_ajtó)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_R_120008_Type">
+      <annotation>
+         <documentation>Adatszolgáltatási időszak</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D500A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kezdete (adatszolg_időszak_kezdete)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D501A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Vége (adatszolg_időszak_vége)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_R_120010_Type">
+      <annotation>
+         <documentation>Nyilatkozat raktárkészletről</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001E001A"
+                  minOccurs="0"
+                  type="tns:Enum_KTRAKT_R_0A0001E001A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az adatszolgáltatási időszak végén raktárkészlettel rendelkezem (raktárkészlet_van)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_R_120014_Type">
+      <annotation>
+         <documentation>Termékdíj raktárba történt betárolások</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0BXXXXC0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Betárolt termékdíjköteles termék ¦ KT/ CSK kódja ([01]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="3"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Betárolt termékdíjköteles termék ¦ megnevezése ([01]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Betárolt termékdíjköteles termék ¦ mennyisége [kg] ([01]C1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="15"/>
+                  <pattern value="[0-9,.]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001DA"
+                  minOccurs="0"
+                  type="tns:Enum_KTRAKT_R_0BXXXXC0001DA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Betárolt termékdíjköteles termék ¦ tulajdon joga ([01]D1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0BXXXXC0001EA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ neve ([01]E1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001FA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ adószáma ([01]F1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001GA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ címe ([01]G1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_R_120039_Type">
+      <annotation>
+         <documentation>Termékdíj raktárból történt kitárolások</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0CXXXXC0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kitárolt termékdíjköteles termék ¦ KT/ CSK kódja ([02]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="3"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kitárolt termékdíjköteles termék ¦ megnevezése ([02]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kitárolt termékdíjköteles termék ¦ mennyisége [kg] ([02]C1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="15"/>
+                  <pattern value="[0-9,.]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC0001DA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kitárolt termékdíjköteles termék ¦ kitárolás jogcíme ([02]D1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="3"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC0001EA"
+                  minOccurs="0"
+                  type="tns:Enum_KTRAKT_R_0BXXXXC0001DA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kitárolt termékdíjköteles termék ¦ tulajdon joga ([02]E1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC0001FA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ neve ([02]F1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC0001GA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ adószáma ([02]G1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC0001HA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ címe ([02]H1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KTRAKT_R_120064_Type">
+      <annotation>
+         <documentation>Raktárkészlet</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0DXXXXC0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Termékdíjköteles termék ¦ KT/ CSK kódja ([03]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="3"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Termékdíjköteles termék ¦ megnevezése ([03]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001CA"
+                  minOccurs="0"
+                  type="tns:Enum_KTRAKT_R_0BXXXXC0001DA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Termékdíjköteles termék ¦ tulajdon joga ([03]C1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0DXXXXC0001GA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Termékdíjköteles termék ¦ zárókészlete [kg] ([03]G1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="15"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001DA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ neve ([03]D1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001EA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ adószáma ([03]E1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001FA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A termékdíjköteles termék tulajdonosának ¦ címe ([03]F1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+</schema>
